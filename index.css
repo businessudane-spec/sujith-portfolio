@@ -1387,6 +1387,7 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
 }
 
 .services-content-col {
