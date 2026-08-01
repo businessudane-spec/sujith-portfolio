@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development & AI Glossary | Technical Directory - Sujith Balan</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Technical terms, jargon, and directory definitions covering WordPress, React, Laravel, AWS, and AI Automation. Custom definitions compiled by Sujith Balan, Kerala.">
+    <meta name="keywords" content="Web Development Glossary, Tech Directory, WordPress definitions, React terms, Sujith Balan, Kerala">
+    <meta name="author" content="Sujith Balan">
+    <link rel="canonical" href="http://localhost:8000/glossary/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="../index.css">
+    
+    <style>
+        :root {
+            --bg-color: #070301;
+            --text-color: #f7f4f2;
+            --accent-orange: #ff5a1f;
+            --accent-glow: rgba(255, 90, 31, 0.15);
+            --font-sans: 'Outfit', sans-serif;
+            --font-mono: 'Space Grotesk', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .seo-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .back-nav {
+            margin-bottom: 3rem;
+        }
+
+        .back-link {
+            color: var(--text-color);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent-orange);
+        }
+
+        .seo-header {
+            margin-bottom: 4rem;
+        }
+
+        .seo-badge {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            margin: 0 0 1.5rem 0;
+            background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .lead-text {
+            font-size: 1.25rem;
+            color: #a3a3a3;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0;
+        }
+
+        .seo-section {
+            margin-bottom: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+        }
+
+        .glossary-item {
+            margin-bottom: 2rem;
+        }
+
+        .glossary-term {
+            font-family: var(--font-mono);
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin: 0 0 0.5rem 0;
+            font-weight: 700;
+        }
+
+        .glossary-def {
+            color: #a3a3a3;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .glow-bg {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, rgba(7, 3, 1, 0) 70%);
+            border-radius: 50%;
+            top: 20%;
+            right: -10%;
+            z-index: 1;
+            pointer-events: none;
+            filter: blur(50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-bg"></div>
+
+    <div class="seo-container">
+        <div class="back-nav">
+            <a href="../index.html#portfolio" class="back-link">
+                <span>←</span> Back to Home
+            </a>
+        </div>
+
+        <header class="seo-header">
+            <span class="seo-badge">Knowledge Base</span>
+            <h1>Technical Glossary</h1>
+            <p class="lead-text">Definitions, references, and core terms describing modern web engineering, AI architectures, database systems, and deployment protocols.</p>
+        </header>
+
+        <section class="seo-section">
+            <div class="glossary-item">
+                <div class="glossary-term">Headless CMS</div>
+                <p class="glossary-def">A content management system that acts strictly as a data repository (back-end), making content accessible via REST or GraphQL APIs to display on decoupled frontend environments (React, Next.js).</p>
+            </div>
+            
+            <div class="glossary-item">
+                <div class="glossary-term">WooCommerce Checkout Boost</div>
+                <p class="glossary-def">A suite of technical optimizations aimed at reducing friction in e-commerce pipelines: accelerating query responses, simplifying input structures, and adding lightning-fast database transaction layers.</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">n8n Agent Orchestration</div>
+                <p class="glossary-def">Constructing automated pipelines using n8n node structures, where LLM nodes act dynamically to clean incoming parameters, distribute tasks, and automate business workflows.</p>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">Core Web Vitals</div>
+                <p class="glossary-def">A set of three user-experience metrics Google uses to evaluate search rankings: Largest Contentful Paint (speed), First Input Delay (interactivity), and Cumulative Layout Shift (visual stability).</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

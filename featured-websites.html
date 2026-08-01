@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Websites | Sujith Balan</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore custom featured website builds and platforms. Page updating soon with new portfolio showcases.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #070301;
+            --text-color: #f7f4f2;
+            --accent-orange: #ff5a1f;
+            --accent-glow: rgba(255, 90, 31, 0.15);
+            --font-sans: 'Outfit', sans-serif;
+            --font-mono: 'Space Grotesk', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 2rem;
+        }
+
+        /* Ambient Glowing Background Elements */
+        .glow-sphere {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, rgba(7, 3, 1, 0) 70%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            pointer-events: none;
+            filter: blur(40px);
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .section-header {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-orange);
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-header::before,
+        .section-header::after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 1px;
+            background-color: var(--accent-orange);
+            opacity: 0.5;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #a3a3a3;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        /* Beautiful "Updating Soon" Card */
+        .status-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .status-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
+        }
+
+        .status-card:hover {
+            border-color: rgba(255, 90, 31, 0.3);
+            box-shadow: 0 20px 40px rgba(255, 90, 31, 0.05);
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 2px solid rgba(255, 255, 255, 0.05);
+            border-top: 2px solid var(--accent-orange);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem auto;
+            animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .status-text {
+            font-family: var(--font-mono);
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        /* Back Button styled to match index.html buttons */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background-color: #ffffff;
+            color: #070301;
+            text-decoration: none;
+            padding: 0.9rem 2rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            background-color: #eaeaea;
+        }
+
+        .back-btn .arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .back-btn:hover .arrow {
+            transform: translateX(-4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-sphere"></div>
+
+    <div class="container">
+        <div class="section-header">Showcases</div>
+        <h1>Featured Websites</h1>
+        
+        <div class="status-card">
+            <div class="spinner"></div>
+            <div class="status-text">Updating Soon</div>
+        </div>
+
+        <p>We are currently curating and building interactive case studies for these selected projects. Check back soon for detailed specs, workflow break-downs, and live previews.</p>
+
+        <a href="index.html#portfolio" class="back-btn">
+            <span class="arrow">←</span>
+            <span>Return to Portfolio</span>
+        </a>
+    </div>
+</body>
+</html>
